@@ -42,9 +42,9 @@ Balti_Blues <- Blues(4)[cut(BaltimoreEmission, breaks = 4)]
 #PLOT CHART
 png("Plot2.png", width = 480, height = 480)
 
- barplot(BaltimoreEmission/1000000, 
+ barplot(BaltimoreEmission, 
                    xlab = "Year", 
-                   ylab = expression("Total PM"[2.5]*" Emissions (millions tonnes)"), 
+                   ylab = expression("Total PM"[2.5]*" Emissions (tonnes)"), 
                    main = expression("Total PM"[2.5]*" Emissions By Year: Baltimore"),
                    col  = Balti_Blues)
 
